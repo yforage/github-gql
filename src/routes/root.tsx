@@ -101,7 +101,7 @@ function Root() {
         }
     });
 
-    const pages = Math.max(Math.floor(Math.min(data.search.repositoryCount ?? 0, 50) / 10), 1);
+    const pages = Math.max(Math.floor(Math.min(data.search.repositoryCount ?? 0, 100) / 10), 1);
 
     if (pages !== pagesCount) {
       dispatch(setPagesCount(pages));
