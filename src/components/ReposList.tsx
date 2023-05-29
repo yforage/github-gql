@@ -7,7 +7,7 @@ const ReposList: React.FC = () => {
   const { repos } = useSelector((state: RootState) => state.reposSearch);
 
   return (
-    <div className={`w-full flex flex-col space-y-2 grow justify-center`}>
+    <div className={`w-full flex flex-col space-y-2 grow`}>
       {repos.map((repo) => (
         <Link key={repo.id} to={`/${repo.owner}/${repo.name}`}>
           <RepoPreview
